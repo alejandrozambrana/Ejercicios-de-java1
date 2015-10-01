@@ -11,6 +11,7 @@ public class Ejercicio2 {
     
     String linea;
 
+    System.out.println("Conversor de euros a pesetas");
     System.out.print("Por favor, Introduce la cantidad de euros a convertir: ");
     linea = System.console().readLine();
     

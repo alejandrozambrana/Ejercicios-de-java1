@@ -10,12 +10,13 @@ public class Ejercicio5 {
     
     String linea;
 
-    System.out.print("Por favor, introduce la base: ");
+    System.out.println("Calcula el area de un rectangulo");
+    System.out.print("Por favor, introduce la base (cm): ");
     linea = System.console().readLine();
     int b;
     b = Integer.parseInt( linea );
     
-    System.out.print("Introduce la altura, por favor: ");
+    System.out.print("Introduce la altura, por favor(cm): ");
     linea = System.console().readLine();
     int h;
     h = Integer.parseInt( linea );
@@ -24,6 +25,6 @@ public class Ejercicio5 {
     area = b * h;
 
       System.out.println("La base es: " + b + " y la altura es: " + h);
-      System.out.println("El area del rectangulo es: " + area);
+      System.out.println("El area del rectangulo es: " + area + " cm²");
   }
 }

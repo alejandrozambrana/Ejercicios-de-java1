@@ -27,8 +27,8 @@ public class Ejercicio4 {
     resta = primerNumero - segundoNumero;
     int multiplicacion;
     multiplicacion = primerNumero * segundoNumero;
-    int division;
-    division = primerNumero / segundoNumero;
+    double division;
+    division = ((double)primerNumero / (double)segundoNumero);
 
       System.out.print("El primer número introducido es " + primerNumero);
       System.out.println(" y el segundo es " + segundoNumero);

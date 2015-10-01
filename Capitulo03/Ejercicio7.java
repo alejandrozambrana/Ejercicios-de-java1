@@ -11,6 +11,7 @@ public class Ejercicio7 {
     
     String linea;
 
+    System.out.println("TOTAL DE FACTURA");
     System.out.print("Por favor, Introduzca la base imponible: ");
     linea = System.console().readLine();
     double baseImponible;

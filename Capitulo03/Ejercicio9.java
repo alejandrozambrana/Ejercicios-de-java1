@@ -16,7 +16,7 @@ public class Ejercicio9 {
     System.out.print("Introduzca la altura (cm): ");
     double altura = Double.parseDouble( System.console().readLine());
     
-    double total = (1.0/3.0) * 3.141592654 * radio * radio * altura;
+    double total = (1.0/3.0) * Math.PI * radio * radio * altura;
 
       System.out.println("El volumen del cono es: " + total + " cm3");
   }
