@@ -40,7 +40,7 @@ public class Ejercicio3 {
       default:
         diaDelsemana = "no existe ese dia de la semana";    
     }
-    System.out.println("El dia es: " + diaDelsemana);
+    System.out.println("El dia numero " + dia + " es el "+ diaDelsemana);
     
  }
 }

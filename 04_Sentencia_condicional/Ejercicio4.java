@@ -23,6 +23,10 @@ public class Ejercicio4 {
     } else {
       sueldoSemanal = (40 * 12) + ((horasTrabajadas - 40) * 16);    
     }
+    System.out.println("Nº horasTotal: " + horasTrabajadas + " horas.");
+    System.out.println("Nº horasExtras: " + ( horasTrabajadas - 40) + " horas.");
+    System.out.println("Precio por hora: 12€/hora - 16€/hora extra.");
     System.out.println("El sueldo semanal es de " + sueldoSemanal + " euros");
+    
   }
 }
