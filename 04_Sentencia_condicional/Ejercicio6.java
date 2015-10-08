@@ -8,12 +8,17 @@
 public class Ejercicio6 {
   public static void main(String[] args) {
     System.out.println("Calcula el tiempo que tarda en caer un objento desde una altura ");
-    System.out.print("Introduce el valor h: en metros ");
-    double h = Double.parseDouble(System.console().readLine());
-    
-    double tiempo = Math.sqrt ((2*h)/9.81);
-    
-    System.out.println("El tiempo que tarda en caer seria " + tiempo);
+  
+    System.out.print("Introduzca la altura (h) en metros: ");
+      int h = Integer.parseInt(System.console().readLine());
+
+    if (h > 0){
+      System.out.print("El tiempo que tarda en caer un objeto ");
+      System.out.print("desde " + h + "m. es: ");
+      System.out.printf("%.2f segundos", Math.sqrt((2.0*h)/9.81));
+    }else{
+      System.out.print("Altura incorrecta.");
     }
   }
+}
 
