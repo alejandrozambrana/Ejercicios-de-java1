@@ -10,9 +10,9 @@ public class Ejercicio5 {
   public static void main(String[] args) {
     System.out.println("CALCULAR ECUACION DE PRIMER GRADO");
     System.out.print("Introduce el valor de a: ");
-    int a = Integer.parseInt(System.console().readLine());
+    double a = Double.parseDouble(System.console().readLine());
     System.out.print("Introduce el valor de b: ");
-    int b = Integer.parseInt(System.console().readLine());
+    double b = Double.parseDouble(System.console().readLine());
     
     if (a == 0) {
     System.out.println("No tiene solucion. ");
