@@ -12,7 +12,7 @@ public class Ejercicio1 {
     System.out.println("Calendario");
     
     System.out.print("Introduzca un dia de la semana : ");
-    int dia = Integer.parseInt(System.console().readLine());
+    int dia = Integer.parseInt(System.console().readLine()).toLowerCase();
     
     String diaDelsemana;
     String horario = "";
@@ -39,7 +39,7 @@ public class Ejercicio1 {
         horario = "Horario: BBDD, BBDD,BBDD, RECREO, PROG, SIN, SIN";
         break;
       default:
-        diaDelsemana = "no existe ese dia de la semana";    
+        diaDelsemana = "Este dia no hay clase";    
     }
     System.out.println("El dia es: " + diaDelsemana);
     System.out.println(horario);
