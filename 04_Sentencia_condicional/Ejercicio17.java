@@ -12,7 +12,11 @@ public class Ejercicio17 {
     System.out.println("ULTIMAS CIFRAS DE UN NUMERO");
         
     System.out.print("Introduce un numero entero: ");
-    int numero = Integer.parseInt(System.console().readLine());
+    long numero = Long.parseLong(System.console().readLine());
+    //para que no aparezca el menos en numeros negativos cuando muestre la ultima cifra
+    if (numero < 0) {
+      numero = -numero;
+    }
     System.out.println("La última cifra del número introducido es el " + (numero % 10));
   }
 }

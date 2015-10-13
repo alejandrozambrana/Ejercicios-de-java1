@@ -42,7 +42,7 @@ public class Ejercicio19 {
      System.out.println("El numero tiene 5 Cifras y positivo");
     } 
     if ((numero <= -10000 ) && (numero > -100000)) {
-     System.out.println("El numero tiene 2 Cifras y negativo");
+     System.out.println("El numero tiene 5 Cifras y negativo");
     }
     if (numero > 99999) {
     System.out.println("El numero introducido no es valido ");
