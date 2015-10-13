@@ -22,11 +22,11 @@ public class Ejercicio11 {
     int segundosTranscurridos = (hora * 3600) + (minutos * 60);
     int segundosHastaMedianoche = (24 * 3600) - segundosTranscurridos;
     
-      if ((hora < 24) && (minutos <= 60)){
+      if ((hora < 24) && (minutos <= 59)){
         System.out.print("Quedan para medianoche " + (24 - hora) + ":"); 
         System.out.println(+ (60 - minutos) + " Horas");
       }
-      if ((hora > 24) || (minutos > 60)) {
+      if ((hora > 24) || (minutos > 59)) {
         System.out.println("La hora introducida es incorrecta");
       }
       System.out.print("Para la media noche quedan " + segundosHastaMedianoche);

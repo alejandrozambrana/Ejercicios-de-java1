@@ -18,7 +18,7 @@ public class Ejercicio12 {
     System.out.println("CUESTIONARIO ");
         
     System.out.println("01-¿double permite meter numeros con decimales? si/no: ");
-    pregunta = System.console().readLine();
+    pregunta = System.console().readLine().toLowerCase();
       if (pregunta.equals("si")) {
         System.out.println("La respuesta es Correcta");
         puntos++;

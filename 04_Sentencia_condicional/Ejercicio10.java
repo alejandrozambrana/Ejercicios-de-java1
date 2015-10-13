@@ -9,94 +9,96 @@ public class Ejercicio10 {
   public static void main(String[] args) {
   
     String horoscopo = "";
+        
+    String mes;
     
     System.out.println("HOROSCOPO ");
         
     System.out.print("Introduce el dia en el que naciste: ");
     int dia = Integer.parseInt(System.console().readLine());
     
-    System.out.print("Introduce el mes en que naciste: ");
-    int mes = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduce el mes en que naciste (en letras) : ");
+    mes = (System.console().readLine()).toLowerCase();
     
     switch(mes) {
-      case 1:
+      case "enero":
         if (dia < 20) {
           horoscopo = "Capricornio";
         } else {
           horoscopo = "Acuario";
         }
         break;
-      case 2:
+      case "febrero":
         if (dia < 18) {
           horoscopo = "Acuario";
         } else {
           horoscopo = "Piscis";
         }
         break;  
-      case 3:
+      case "marzo":
         if (dia < 20) {
           horoscopo = "Piscis";
         } else {
           horoscopo = "Aries";
         }
         break; 
-      case 4:
+      case "abril":
         if (dia < 20) {
           horoscopo = "Aries";
         } else {
           horoscopo = "Tauro";
         }
         break; 
-      case 5:
+      case "mayo":
         if (dia < 21) {
           horoscopo = "Tauro";
         } else {
           horoscopo = "Geminis";
         }
         break; 
-      case 6:
+      case "junio":
         if (dia < 21) {
           horoscopo = "Geminis";
         } else {
           horoscopo = "Cancer";
         }
         break; 
-      case 7:
+      case "julio":
         if (dia < 23) {
           horoscopo = "Cancer";
         } else {
           horoscopo = "Leo";
         }
         break; 
-      case 8:
+      case "agosto":
         if (dia < 23) {
           horoscopo = "Leo";
         } else {
           horoscopo = "Virgo";
         }
         break; 
-      case 9:
+      case "septiembre":
         if (dia < 23) {
           horoscopo = "Virgo";
         } else {
           horoscopo = "Libra";
         }
         break; 
-      case 10:
+      case "octubre":
         if (dia < 23) {
           horoscopo = "Libra";
         } else {
           horoscopo = "Escorpio";
         }
         break; 
-      case 11:
+      case "noviembre":
         if (dia < 22) {
           horoscopo = "Escorpio";
         } else {
           horoscopo = "Sagitario";
         }
         break;
-      case 12:
+      case "diciembre":
         if (dia < 22) {
           horoscopo = "Sagitario";
         } else {
