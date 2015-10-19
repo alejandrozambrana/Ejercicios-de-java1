@@ -19,7 +19,7 @@ public class Ejercicio9{
     int n = numero;
     
     while (n > 10) {
-      n /= 10;
+      n = n/10;
       digitos++;
       }
      
