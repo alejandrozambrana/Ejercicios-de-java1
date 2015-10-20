@@ -11,17 +11,21 @@ public class Ejercicio14{
      
     System.out.println("ESTE PROGRAMA CALCULA POTENCIAS");
     System.out.println("Introduzca la base: ");
-    int base = Integer.parseInt(System.console().readLine());
+    int base = Math.abs(Integer.parseInt(System.console().readLine()));
     System.out.println("Introduzca un exponente: ");
     int exponente = Integer.parseInt(System.console().readLine());
         
-    double resultado = 1;
+    int potencia = 1;
     
-    while ( exponente > 0 ) {
-      exponente *= base;
-    }
-      resultado = 1/resultado;
-    System.out.println(base + "^" + exponente + " = " + resultado);
+    if (exponente >= 0) {
+      for (int n = 1; n <= exponente; n++){
+        
+        potencia = potencia * base;
+      }
+      System.out.println(base + "^" + exponente + " = " + potencia);
+    } else {
+        System.out.println("El exponente introducido es negatico");
+      }
   }
 }
 
