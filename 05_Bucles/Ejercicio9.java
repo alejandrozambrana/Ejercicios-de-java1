@@ -13,12 +13,12 @@ public class Ejercicio9{
     System.out.println("MUESTRA CUANTOS DIGITOS TIENE EL NUMERO INTRODUCIDO");
       
     System.out.print("Introduzca un numero entero: ");
-    int numero = Integer.parseInt(System.console().readLine());
+    int numero = Math.abs(Integer.parseInt(System.console().readLine()));
         
     int digitos = 1;
     int n = numero;
     
-    while (n > 10) {
+    while (n > 9) {
       n = n/10;
       digitos++;
       }

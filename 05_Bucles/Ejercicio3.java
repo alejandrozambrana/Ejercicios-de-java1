@@ -12,7 +12,7 @@ public class Ejercicio3 {
     
     do {
       System.out.println(i);
-      i = i + 5;
+      i = i + 5; /** es lo mismo que i += 5; */
     } while (i < 101);
   }
 }

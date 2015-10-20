@@ -23,11 +23,15 @@ public class Ejercicio7 {
         
         intentos--;
         
+        if((codigo < 1000) || (codigo > 9999)) {
+          System.out.println("La combinacion debe de ser de 4 cifras.");
+        }
+        
         if (codigo == 2596) {
           System.out.println("Ha abierto la caja fuerte.");
           break;
         } else {
-          System.out.println("Lo siento, ha agotado las 4 oportunidades.");
+          System.out.println("Lo siento, contraseña incorrecta.");
         }
       } while(intentos > 0);
     }

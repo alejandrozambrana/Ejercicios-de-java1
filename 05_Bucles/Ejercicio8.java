@@ -14,7 +14,8 @@ public class Ejercicio8 {
     int tabla = Integer.parseInt(System.console().readLine());
         
     for (int i = 0; i <= 10; i++) {
-      System.out.println(tabla + " x " + i + " = " + tabla * i);
+      System.out.println(tabla + " x " + i + " = " + (tabla * i));
+      // otra manera System.out.println("%6d x %2d = %6d\n", tabla, i,(tabla * i));
     }
   }
 }
