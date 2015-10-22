@@ -12,16 +12,21 @@ public class Ejercicio17 {
      
     System.out.println("ESTE PROGRAMA LOS 100 NUMEROS SIGUENTES AL INTRODUCIDO");
     
-     int total = 0;
      int numero = 0;
      
       do {
-        System.out.println("Introduzca un numero entero positivo: ");
+        System.out.print("Introduzca un numero entero positivo: ");
          numero = Integer.parseInt(System.console().readLine());
+     
+        if (numero < 0){
+          System.out.println("El numero introducido no es correcto. Introduce un numero positivo ");
+          }
       } while (numero < 0);
       
-      for (int i = 0; i < numero + 100;i++) {
-      total = total * numero;
+      int total = 0;
+      
+      for (int i = numero; i < numero + 100;i++) {
+      total = total + i;
       }
       
       System.out.print("La suma de los 100 siguientes numeros de " + numero);
