@@ -1,7 +1,6 @@
 /**
  * Ejercicio 20
  * Igual que el ejercicio anterior pero esta vez se debe pintar una pirámide hueca.
-
  * 
  * @author Alejandro Zambrana Naranjo
  */
@@ -19,16 +18,22 @@ public class Ejercicio20 {
      
      int alto = 1;
      int espacios = altura-1;
+     int hueco = 0;
      
-    while (alto <= altura){
+    while (alto < altura){
       
       //meter espacios
       for (int i = 1; i <= espacios; i++){
         System.out.print(" ");
       }
       
-      // pinta la línea
-      for (int i = 1; i < alto * 2; i++){
+      // pinta la línea y huecos internos
+      System.out.print(caracter);
+      for (int i = 1; i < hueco; i++){
+        System.out.print(" ");
+      }
+      //Linea inversa
+      if (alto > 1){
         System.out.print(caracter);
       }
       
@@ -36,7 +41,14 @@ public class Ejercicio20 {
       
       alto++;
       espacios--;
+      hueco = hueco + 2;
     }
+      
+      //Base piramide
+    for (int i = 1; i < alto * 2; i++) {
+      System.out.print(caracter);
+    }
+
   }
 }
 

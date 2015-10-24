@@ -19,16 +19,39 @@ public class Ejercicio12{
     int n = 0;
     int numero1 = 0;
     int numero2 = 1;
-    int aux = 0;
+    int suma;
+    
+    if (numeroIntroducido == 1){
+      System.out.println("0");
+      } else {
+      System.out.print(numero1 +" ");
+      //hecho con for
+      /*for (int i = 1; i < numeroIntroducido; i++){
+        System.out.print(numero2 +" ");
+        suma = numero1 + numero2;
+        numero1 = numero2;
+        numero2 = suma;
+      } */
       
+      //hecho con do while
+      int i = 1;
+      do {
+        System.out.print(numero2 +" ");
+        suma = numero1 + numero2;
+        numero1 = numero2;
+        numero2 = suma;
+        i++;
+      } while (i < numeroIntroducido);
+/*      
     while (n <= numeroIntroducido) {
-      aux = numero1;
+      suma = numero1;
       numero1 = numero2;
       numero2 = numero1 + aux;
       n++;
-      System.out.print(aux + ", ");
+      System.out.print(suma + ", ");
     }
-    
+    */
+    }
   }
 }
 
