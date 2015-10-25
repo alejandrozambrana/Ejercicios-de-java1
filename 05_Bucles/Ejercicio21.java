@@ -15,8 +15,8 @@ public class Ejercicio21 {
      
     int numeroIntroducido;
     int numeros = 0;
-    int pares = 2;
-    int impares = 1;
+    int pares = 0;
+    double impares = 0;
     int suma = 0;
       
     System.out.println("Introduzca numeros (para parar introduce un numero negativo) : ");
@@ -24,13 +24,23 @@ public class Ejercicio21 {
     do {
       numeroIntroducido = Integer.parseInt(System.console().readLine());
       numeros++;
-      suma = suma + impares;
+      
+      //media impares
+      if ((numeroIntroducido % 2) == 1){
+         suma = suma + numeroIntroducido;
+         impares++;
+      } else {
+        //numero mayos pares
+        if (numeroIntroducido > pares){
+          pares = numeroIntroducido;
+        }
+      }
     } while (numeroIntroducido >= 0);
     
-      
     System.out.println("Ha introducido " + (numeros - 1) + " numeros"); 
+    System.out.println("La media de los impares es: " + suma/impares); 
     System.out.println("El numero mayor de los pares es: " + pares);
-    System.out.println("La media de los impares es: " + (suma - impares) / (numeros - 1)); 
+    
      
   }
 }
