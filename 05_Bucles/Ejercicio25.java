@@ -1,48 +1,28 @@
 /**
- * Ejercicio 24
- * Escribe un programa que lea un número n e imprima una pirámide de números con n 
- * filas como en la siguiente figura:
- *    1
- *   121
- *  12321
- * 1234321
+ * Ejercicio 25 
+ * Realiza un programa que pida un número por teclado y que luego muestre ese número
+ *  al revés.
  * 
  * @author Alejandro Zambrana Naranjo
  */
  
-public class Ejercicio24 {
+public class Ejercicio25 {
   public static void main(String[] args) {
      
-  System.out.println("MUESTRA UNA PIRAMIDE DE NUMEROS");
+  System.out.println("ESTE PROGRAMA MUESTRA EL NUMERO INTRODUCIDO AL REVES");
 
-    System.out.print("Introduze la altura: " );
-    int alturaIntroducida = Integer.parseInt(System.console().readLine());
+    System.out.print("Introduzca un número entero: " );
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());
+    
+    int numero = numeroIntroducido;
+    int reves = 0;
+    
+    do {
+      reves = (reves * 10) + (numero % 10);
+      numero = numero / 10;
+    } while (numero > 0);
    
-    int altura = 1;
-    int espacios = alturaIntroducida - 1;
-   
-    while (altura <= alturaIntroducida){
-     
-      //espacios anterior
-      for (int i = 1; i <= espacios;i++){
-        System.out.print(" ");
-      }
-     
-      //pintar piramide
-      for (int i = 1; i < altura; i++){
-        System.out.print(i);
-      }
-      
-      //pintar piramide restando numeros
-      for (int i = altura; i > 0; i--){
-        System.out.print(i);
-      }
-      
-      altura++;
-      espacios--;
-      
-      System.out.println();
-    }
+    System.out.println("El numero introducido es " + numeroIntroducido + " al reves es " + reves);
   }
 }
 
