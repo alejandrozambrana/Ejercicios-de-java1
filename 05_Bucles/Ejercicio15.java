@@ -17,22 +17,18 @@ public class Ejercicio15 {
     int base = Math.abs(Integer.parseInt(System.console().readLine()));
     
     System.out.println("Introduzca un exponente: ");
-    int exponentefinal = Integer.parseInt(System.console().readLine());
+    int exponente = Integer.parseInt(System.console().readLine());
         
     int potencia;
-    int exponente;
     
-    if (exponentefinal >= 0) {
-      for (int n = 1; n <= exponentefinal; n++){
+    if (exponente >= 0) {
+      for (int n = 1; n <= exponente; n++){
         
+        //calcula base elevado a exponente
         potencia = 1;
-        exponente = n;
-        
-          for (int x = 0; x < exponente; x++ ) {
-            
-            potencia = potencia * base;
-            
-          } 
+        for (int x = 0; x < n; x++ ) {
+          potencia = potencia * base;
+        } 
       
         System.out.println(base + "^" + exponente + " = " + potencia);
       }

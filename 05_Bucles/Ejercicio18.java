@@ -14,7 +14,8 @@ public class Ejercicio18 {
     
     int numero1;
     int numero2;
-     
+
+    //se poden dos numeros y se valida que sean distintos 
     do {
       System.out.print("Introduzca un numero entero : ");
       numero1 = Integer.parseInt(System.console().readLine());

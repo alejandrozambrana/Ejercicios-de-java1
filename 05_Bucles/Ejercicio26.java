@@ -10,7 +10,7 @@
 public class Ejercicio26 {
   public static void main(String[] args) {
      
-  System.out.println("ESTE PROGRAMA LA POSISION DE UN NUMERO");
+  System.out.println("ESTE PROGRAMA LA POSICION DE UN NUMERO");
 
     System.out.print("Introduzca un número entero: " );
     int numeroIntroducido = Integer.parseInt(System.console().readLine());
@@ -20,14 +20,9 @@ public class Ejercicio26 {
     
     int numero = numeroIntroducido;
     int reves = 0;
-    int longitud = 0;
     int posicion = 1;
     
-    // voltea el número y calcula la longitud
-    if (numero < 10) {
-      longitud = 1;
-    }
-    
+    // voltea el número    
     do {
       reves = (reves * 10) + (numero % 10);
       numero = numero / 10;

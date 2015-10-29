@@ -20,7 +20,7 @@ public class Ejercicio25 {
     do {
       reves = (reves * 10) + (numero % 10);
       numero = numero / 10;
-    } while (numero > 0);
+    } while (numero >= 0);
    
     System.out.println("El numero introducido es " + numeroIntroducido + " al reves es " + reves);
   }

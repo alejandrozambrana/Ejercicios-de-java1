@@ -16,7 +16,7 @@ public class Ejercicio21 {
     int numeroIntroducido;
     int numeros = 0;
     int pares = 0;
-    double impares = 0;
+    int impares = 0;
     int suma = 0;
       
     System.out.println("Introduzca numeros (para parar introduce un numero negativo) : ");
