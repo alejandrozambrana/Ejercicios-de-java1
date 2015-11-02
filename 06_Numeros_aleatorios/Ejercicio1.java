@@ -12,12 +12,11 @@ public class Ejercicio1 {
 
     System.out.println("ESTE PROGRAMA MUESTRA LA TIRADA DE TRES DADOS");
 
-    int dados;
     int suma = 0; 
     
     for(int i = 1; i <= 3; i++){
-      dados = (int)(Math.random()*6) + 1;
-      System.out.print(dados + " ");
+      int dados = (int)(Math.random()*6) + 1;
+      System.out.println("El numero del dado " + i + " es: " + dados);
       suma = suma + dados;
     }
       
