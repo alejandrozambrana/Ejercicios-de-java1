@@ -9,29 +9,22 @@ public class Ejercicio28 {
   public static void main(String[] args) {
      
   System.out.println("ESTE PROGRAMA EL FACTORIAL DE UN NUMERO ENTERO");
+  System.out.print("Introduzca un número entero para calcular su factorial: ");
+  int numero = Integer.parseInt(System.console().readLine());
 
-    int numeroIntroducido; 
-    
-    do {
-      System.out.print("Introduzca un número mayor o igual que 0: ");
-      numeroIntroducido = Integer.parseInt(System.console().readLine());
-      
-        if (numeroIntroducido < 0){
-          System.out.println("El número introducido no es correcto.");
-        }
-    }while (numeroIntroducido < 0);
-    
-    int factorial = numeroIntroducido;
-    
-    if ( numeroIntroducido == 0){
-      System.out.println("El factorial del " + numeroIntroducido + " es 1.");
-    } else {
-      for (int i = 1; i < numeroIntroducido; i++) {
-      factorial = factorial * i;
+  System.out.print(numero + "! = ");
+  
+  int factorial = 1;
+
+    for (int i = 1; i <= numero; i++){
+      factorial *= i;
+      if (i < numero){
+        System.out.print(i + " x ");
+      }else{
+        System.out.print(i + " = ");
       }
-      
-    System.out.println("El factorial del " + numeroIntroducido + " es " + factorial);
     }
+    System.out.print(factorial);
   }
 }
 
