@@ -55,6 +55,6 @@ public class Ejercicio2 {
           cartas = String.valueOf(numerocarta);
       }
     
-    System.out.println(cartas + " de " + palos);
+    System.out.println("Su carta es: " + cartas + " de " + palos);
   }
 }
