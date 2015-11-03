@@ -42,6 +42,17 @@ public class Ejercicio2 {
         case 1:
           cartas = "As";
           break;
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+          cartas = String.valueOf(numerocarta); //Para convertir un número en una cadena de caracteres
+          break;
         case 11:
           cartas = "J";
           break;
@@ -52,7 +63,6 @@ public class Ejercicio2 {
           cartas = "K";
           break;
         default:
-          cartas = String.valueOf(numerocarta);
       }
     
     System.out.println("Su carta es: " + cartas + " de " + palos);

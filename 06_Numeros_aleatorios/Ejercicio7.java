@@ -1,5 +1,4 @@
 /**
- * 
  * Ejercicio 7 
  * Escribe un programa que muestre tres apuestas de la quiniela en tres columnas 
  * para los 14 partidos y el pleno al quince (15 filas).
@@ -10,36 +9,32 @@ public class Ejercicio7 {
 
 	public static void main(String[] args) {
 
-    System.out.println("ESTE PROGRAMA TIENES QUE AVERIGUAR 1 NUMERO ALEATORIO ENTRE 0 y 100 (TIENES 5 OPORTUNIDADES)");
+    System.out.println("ESTE PROGRAMA MUESTRA LA QUINIELA DE FUTBOL");
 
-    int oportunidades = 5;
-    int intento = 0;
+    String resultadoString =" ";
     
-    int numeroSecreto = (int)(Math.random()*101);
-    do {
-      System.out.print("Introduce un numero:");
-      int numeroIntroducido = Integer.parseInt(System.console().readLine());
+    System.out.println("       Apuesta1  Apuesta2  Apuesta3\n");
+
+    for (int i = 1; i <= 15;i++){
+      System.out.printf("%2d.", i);
       
-      if(numeroIntroducido == numeroSecreto){
-        System.out.println("Enhorabuena, Ha acertado el numero secreto");
-        break;
-      } else {
-        oportunidades--;
-        System.out.println("Lo siento el numero Secreto no es correcto, Tiene " + oportunidades + " oportunidades");
-      
-        if (numeroIntroducido > 100){
-          System.out.println("El numero introducido es mayor que 100");
+      for(int columna = 0; columna < 3;columna++){
+        int resultado =(int)(Math.random()*3)+1;
+        switch (resultado){
+          case 1:
+            resultadoString = "|1  |";
+            break;
+          case 2:
+            resultadoString = "| X |";
+            break;
+          case 3:
+            resultadoString = "|  2|";
+            break;
+          default:
         }
-        if (numeroIntroducido < 0){
-          System.out.println("El numero introducido es menor que 0");
-        }
-    
-        intento++;
-        
-        if (intento == 5){
-          System.out.println("Ha superado el limite de intentos. El numero era: " + numeroSecreto);
-        }
+        System.out.printf("     " + resultadoString);
       }
-    } while (intento < 5);
+      System.out.println();
+    }
   }
 }
