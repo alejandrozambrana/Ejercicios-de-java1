@@ -16,7 +16,6 @@ public class Ejercicio10 {
     String caracteres = "";
     
     for (int i = 0; i < 10; i++){
-       int longitud = (int)(Math.random()*40)+1;
        int numCaracter = (int)(Math.random()*6)+1;
         switch (numCaracter){
           case 1:
@@ -39,7 +38,8 @@ public class Ejercicio10 {
             break;
           default:
         }
-
+        
+      int longitud = (int)(Math.random()*40)+1;
       for(int x = 1; x < longitud;x++){
         System.out.print(caracteres);
       }

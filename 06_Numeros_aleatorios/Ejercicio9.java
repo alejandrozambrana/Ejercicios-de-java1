@@ -26,6 +26,7 @@ public class Ejercicio9 {
       }
       
     }while ( numerosMostrados < 101);
+    //}while (numeros != 24);
     System.out.println("Ha mostrado " + numerosMostrados + " numeros");
   }
 }

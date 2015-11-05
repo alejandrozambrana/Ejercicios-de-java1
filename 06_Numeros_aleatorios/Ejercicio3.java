@@ -14,7 +14,7 @@ public class Ejercicio3 {
 
     String palos = "";
     String cartas = "";
-    
+
     int tipopalos = (int)(Math.random()*4) + 1;
     
       switch (tipopalos) {
@@ -50,7 +50,6 @@ public class Ejercicio3 {
         default:
           cartas = String.valueOf(numerocarta);
       }
-    
     System.out.println("Su carta es: " + cartas + " de " + palos);
   }
 }

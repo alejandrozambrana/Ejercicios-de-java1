@@ -29,11 +29,11 @@ public class Ejercicio6 {
         oportunidades--;
         System.out.println("Lo siento el numero Secreto no es correcto, Tiene " + oportunidades + " oportunidades");
       
-        if (numeroIntroducido > 100){
-          System.out.println("El numero introducido es mayor que 100");
+        if (numeroIntroducido < numeroSecreto){
+          System.out.println("El numero es mayor");
         }
-        if (numeroIntroducido < 0){
-          System.out.println("El numero introducido es menor que 0");
+        if (numeroIntroducido > numeroSecreto){
+          System.out.println("El numero es menor.");
         }
     
         intento++;

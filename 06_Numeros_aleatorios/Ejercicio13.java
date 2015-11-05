@@ -8,7 +8,8 @@
  */
 public class Ejercicio13 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+    throws InterruptedException {
 
     System.out.println("ESTE PROGRAMA MUESTRA LA TIRADA DE DOS DADOS HASTA QUE SALGA EL MISMO VALOR");
     
@@ -18,7 +19,9 @@ public class Ejercicio13 {
     do{
       dados1 = (int)(Math.random()*6) + 1;
       dados2 = (int)(Math.random()*6) + 1;
+      Thread.sleep(2550);
       System.out.println("El numero del dado 1 es: " + dados1);
+      Thread.sleep(2550);
       System.out.println("El numero del dado 2 es: " + dados2);
     }while (dados1 != dados2);
   }

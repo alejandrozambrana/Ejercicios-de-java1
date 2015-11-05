@@ -8,14 +8,15 @@
  */
 public class Ejercicio12 {
 
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 
     System.out.println("ESTE PROGRAMA MUESTRA NOTAS AL AZAR");
       
+      String verde = "\033[32m";
       
       for(int i = 0; i == 0;){
         char caracter =(char)((int)((Math.random()*95)+32));
-        System.out.print("\033[32m" +caracter + "\t");
+        System.out.print(verde + caracter + "\t");
     }
   }
 }

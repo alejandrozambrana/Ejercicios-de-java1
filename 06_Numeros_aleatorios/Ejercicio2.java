@@ -36,6 +36,7 @@ public class Ejercicio2 {
           break;
         default:
       }
+      
     int numerocarta = (int)(Math.random()*13 ) + 1;
     
       switch (numerocarta) {

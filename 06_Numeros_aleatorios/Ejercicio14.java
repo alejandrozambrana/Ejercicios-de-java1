@@ -10,7 +10,8 @@
  */
 public class Ejercicio14 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+    throws InterruptedException {
 
     System.out.println("EL PROGRAMA TIENE QUE AVERIGUAR 1 NUMERO ALEATORIO QUE TU TIENES PENSAO ENTRE 0 y 100 (TIENE 5 OPORTUNIDADES)");
 
@@ -19,7 +20,7 @@ public class Ejercicio14 {
     int numeroPensado;
     int mayor = 100;
     int menor = 0;
-    
+    Thread.sleep(5550);
     do {
       numeroPensado = (int)(Math.random()*101);
       System.out.println(numeroPensado + " ¿Es es el numero que has pensado? Si/No");
