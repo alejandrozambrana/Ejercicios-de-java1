@@ -15,7 +15,7 @@ public class Ejercicio12 {
       
       for(int i = 0; i == 0;){
         char caracter =(char)((int)((Math.random()*95)+32));
-        System.out.print("\033[32m" + caracter + "\t");
+        System.out.print("\033[32m" +caracter + "\t");
     }
   }
 }
