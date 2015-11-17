@@ -10,7 +10,7 @@
 public class Ejercicio17 {
   public static void main(String[] args) {
      
-    System.out.println("ESTE PROGRAMA LOS 100 NUMEROS SIGUENTES AL INTRODUCIDO");
+    System.out.println("ESTE PROGRAMA suma LOS 100 NUMEROS SIGUENTES AL INTRODUCIDO");
     
      int numero = 0;
      

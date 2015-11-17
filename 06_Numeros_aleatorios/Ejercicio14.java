@@ -22,7 +22,7 @@ public class Ejercicio14 {
     int menor = 0;
     Thread.sleep(5550);
     do {
-      numeroPensado = (int)(Math.random()*101);
+      numeroPensado = (int)(Math.random()*(mayor-menor)+menor);
       System.out.println(numeroPensado + " ¿Es es el numero que has pensado? Si/No");
       String respuesta= System.console().readLine().toLowerCase();
       
@@ -30,17 +30,16 @@ public class Ejercicio14 {
         System.out.println("He acertado el numero secreto!!");
         break;
       } else {
-        oportunidades--;
         System.out.println("¿El numero que has pensado es mayor o menor?, Me quedan " + oportunidades + " oportunidades");
         String mayorMenor= System.console().readLine().toLowerCase();
+        oportunidades--;
         intento++;
         
         if (mayorMenor.equals("mayor")){
-          menor = numeroPensado;
+          menor = numeroPensado+1;
         } else {
-          mayor = numeroPensado;
+          mayor = numeroPensado-1;
         }
-        
         
         if (intento == 5){
           System.out.println("Me has ganado no he conseguido averiguarlo :( ");
