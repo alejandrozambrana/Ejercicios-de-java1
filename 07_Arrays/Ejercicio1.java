@@ -21,9 +21,9 @@ public class Ejercicio1 {
     num[6] = 14;
     num[8] = 5;
     num[9] = 120;
-    
+    //Recorre el array Sirve para mostrar los valores del array
     for (int n : num){
-    System.out.print(n + " ");
+    System.out.print(n + "|");
     }
   }
 }

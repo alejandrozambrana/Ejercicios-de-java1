@@ -13,18 +13,20 @@
 public class Ejercicio4 {
 
   public static void main(String[] args) {
-
+    
+    System.out.println("ESTE PROGRAMA MUESTRA TRES ARRAYS DE 20 NUMEROS");
+    
     int[] numero = new int [20];
     int[] cuadrado = new int [20];
     int[] cubo = new int [20];
-    
-    System.out.println("ESTE PROGRAMA MUESTRA TRES ARRAYS DE 20 NUMEROS");
-
+    System.out.printf("Numero | Cuadrado |   Cubo\n");
+    System.out.printf("----------------------------\n");
+  
     for (int i = 0; i < 20; i++){
       numero[i] = (int)(Math.random()*101); 
       cuadrado[i] = numero[i] * numero[i];
       cubo[i] = numero[i] * numero[i] * numero[i];
-      System.out.println(numero[i] + "\t" + cuadrado[i] + "\t" + cubo[i]);
+      System.out.printf("  %3d  |   %5d  | %8d\n", numero[i], cuadrado[i], cubo[i]);
       
     }
   }

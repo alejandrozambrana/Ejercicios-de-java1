@@ -12,8 +12,8 @@ public class Ejercicio5 {
   public static void main(String[] args) {
 
     int[] numero = new int [10];
-    int numMax = Integer.MIN_VALUE;
-    int numMin = Integer.MAX_VALUE;
+    int numMax = Integer.MIN_VALUE;//Coje el maximo valor 
+    int numMin = Integer.MAX_VALUE;//coje el minimo valor
     
     System.out.println("ESTE PROGRAMA MUESTRA EL NUMERO MAXIMO Y MINIMO Introducido");
 

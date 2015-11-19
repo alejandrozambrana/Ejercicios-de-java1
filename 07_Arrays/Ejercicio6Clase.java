@@ -21,13 +21,23 @@ public class Ejercicio6Clase {
       System.out.print("Introduce el " + (i + 1) + " numero: ");
       numero[i] = Integer.parseInt(System.console().readLine());
     }
+    
+    //Muestra array original
+    for (int n : numero){
+      System.out.print(n + " ");
+    }
+    
     //Cambiar numeros de posicion en el array
+    System.out.println();
+    System.out.print("Array cambiado: ");
+    System.out.println();
     int ultimo = numero[14];
     for(int i = 14; i > 0; i--){
       numero[i]= numero[i - 1];
     }
     //pinta el ultimo numero en la posicion 0
     numero[0] = ultimo;
+    
     //Muestra los 15 numeros
     for(int n = 0; n < 15; n++){
       System.out.print(numero[n] + " ");      

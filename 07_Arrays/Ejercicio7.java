@@ -15,7 +15,6 @@ public class Ejercicio7 {
 
     int[] numero = new int [100];
     int aleatorios = 0;
-    int d = 0;
         
     System.out.println("ESTE PROGRAMA CAMBIA LA OCURRENCIA DEL PRIMER VALOR");
 

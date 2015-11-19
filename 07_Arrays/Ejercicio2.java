@@ -1,4 +1,4 @@
-/**
+1/**
  * 
  * Ejercicio 2 
  * Define un array de 10 caracteres con nombre simbolo y asigna valores a los 
