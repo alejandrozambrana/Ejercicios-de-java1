@@ -13,8 +13,6 @@ public class Ejercicio9 {
     System.out.println("ESTE PROGRAMA MUESTRA NUMEROS PARES E IMAPRES");
     
     int[] numeros = new int[8];
-    int[] par = new int[8]; 
-    int[] impar = new int[8]; 
     
     System.out.println("Introduze 8 numeros enteros: ");
     for(int i = 0; i < 8; i++) {
