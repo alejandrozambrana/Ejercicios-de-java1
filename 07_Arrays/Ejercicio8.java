@@ -14,12 +14,26 @@ public class Ejercicio8 {
 
     System.out.println("ESTE PROGRAMA PIDE LA TEMPERATURA MEDIA Y PINTA UN DIAGRAMA");
     
+    int numeroMes = 12;
+    
     String[] mes = {"Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio",
       "Agosto","Septiembre","Octubre","Noviembre","Diciembre",};
+      
+    int[] temperatura = new int[12]; 
+    
+    String azul = "\033[34m";
     
     //Pide la temperatura media del mes
-    System.out.print("Temperatura media de " + ( mes[0]) + " es: ");
-    mes[1] = System.console().readLine();
-
+    for(int i = 0; i < numeroMes; i++){
+      System.out.print("Temperatura media de " + ( mes[i]) + " es: ");
+      temperatura[i] = Integer.parseInt(System.console().readLine());
+    }
+    for(int i = 0; i < numeroMes; i++){
+      System.out.printf("%13s", mes[i] + " | ");
+        for(int n = 0; n < temperatura[i]; n++){
+          System.out.print("▄");
+        }
+      System.out.printf("%6s", temperatura[i] + "ºC\n");
+    }
   }
 }
