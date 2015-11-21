@@ -17,7 +17,6 @@ public class Ejercicio10 {
     int[] aleatorio = new int[20];
     int[] par = new int[20]; 
     int[] impar = new int[20]; 
-    int[] total = new int[20]; 
     int pares = 0;
     int impares = 0;
     int i;
