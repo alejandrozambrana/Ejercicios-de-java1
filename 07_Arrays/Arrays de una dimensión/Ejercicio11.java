@@ -28,15 +28,20 @@ public class Ejercicio11 {
     for(i = 0; i < 10; i++) {
       numero[i] = Integer.parseInt(System.console().readLine());
     }
+    
     //genera y muestra el array original
     System.out.println("Array original:");
     for(i = 0; i < 10; i++) {
       System.out.print(numero[i] + " " ); 
+      
       //Comprueba los numeros primos
       primo = true;
       for (int j = 2; j < numero[i] - 1; j++) {
-        if (numero[i] % j == 0) primo = false;
+        if (numero[i] % j == 0) {
+          primo = false;
+        }
       }
+      
       //mete los numeros primos en un array y los no primo en otro
       if(primo){
          arrayPrimo[numPrimo++] = numero[i];
