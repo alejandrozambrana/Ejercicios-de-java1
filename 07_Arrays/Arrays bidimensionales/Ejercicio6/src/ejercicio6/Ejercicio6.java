@@ -1,17 +1,15 @@
 /**
  * 
- * Ejercicio 5
- * Realiza un programa que rellene un array de 6 filas por 10 columnas con números enteros
- * positivos comprendidos entre 0 y 1000 (ambos incluidos). A continuación, el programa
- * deberá dar la posición tanto del máximo como del mínimo.
+ * Ejercicio 6
+ * Modifica el programa anterior de tal forma que no se repita ningún número en el array.
  * 
  * @author Alejandro Zambrana Naranjo
  */
-package ejercicio5;
+package ejercicio6;
 
 import java.util.Scanner;
 
-public class Ejercicio5 {
+public class Ejercicio6 {
 
   public static void main(String[] args){
     
@@ -30,15 +28,34 @@ public class Ejercicio5 {
     int filaMaximo = 0;
     int columnaMaximo = 0;
     
+    // Genera el contenido del array sin que se repita ningún valor
+    boolean repetir;
+    int i;
+    int j;
+      
+    for(filas = 0; filas < 6; filas++) {
+      for(columnas = 0; columnas < 10; columnas++) {
+        do{
+          num [filas][columnas] = (int)(Math.random()*1001);
+          // Comprueba si el número generado ya está en el array.
+          repetir = false;
+          for (i = 0; i < 10 * filas + columnas; i++) {
+            if (num[filas][columnas] == num[i / 10][i % 10]) {
+              repetir = true;
+            }
+          }
+        }while(repetir);
+      }
+    }
+    
     //pinta tabla
     System.out.println();
     System.out.println("         col1    col2    col3    col4    col5    col6    col7    col8    col9    col10");
     System.out.print("      ---------------------------------------------------------------------------------");
     System.out.println();
     for(filas = 0; filas < 6; filas++){
-      System.out.print("|  F" + filas +"  ");
+      System.out.print("  F" + filas +"  ");
       for(columnas = 0; columnas < 10; columnas++){
-        num [filas][columnas] = (int)(Math.random()*1001);
         System.out.printf("|%5d  ", num[filas][columnas]);
      
       //Calcilar cual es el minimo
