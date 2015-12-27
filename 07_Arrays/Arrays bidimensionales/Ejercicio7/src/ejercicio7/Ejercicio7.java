@@ -5,8 +5,9 @@
  * casilla de distancia, el programa avise diciendo ¡Cuidado! ¡Hay una mina cerca!
  * 
  * @author Alejandro Zambrana Naranjo
- * package ejercicio7;
+ * 
  */
+package ejercicio7;
  
 import java.util.Scanner;
 
