@@ -21,6 +21,9 @@ public class Ejercicio9 {
     int[][] matriz = new int[12][12]; 
     int columnas;
     int filas;
+    int movimiento;
+    int aux;
+    int aux2;
      
     // genera el array y lo muestra
     System.out.println("                      Matriz original");
@@ -31,6 +34,36 @@ public class Ejercicio9 {
         System.out.printf("%5d", matriz[filas][columnas]);
       }
     System.out.println();
+    }
+    
+    //rotar
+    for(movimiento = 0; movimiento < 6; movimiento++) {
+      
+      // rota por arriba
+      aux = matriz[movimiento][11 - movimiento];
+      for (filas = 11 - movimiento; filas > movimiento; filas--) {
+        matriz[movimiento][filas] = matriz[movimiento][filas - 1];
+      }
+       // rota por la derecha      
+      aux2 = matriz[11 - movimiento][11 - movimiento];
+      for (filas = 11 - movimiento; filas > movimiento + 1; filas--) {
+        matriz[filas][11 - movimiento] = matriz[filas - 1][11 - movimiento];
+      }
+      matriz[movimiento + 1][11 - movimiento] = aux;
+      
+      // rota por abajo
+      aux = matriz[11 - movimiento][movimiento];
+      for (filas = movimiento; filas < 11 - movimiento - 1; filas++) {
+        matriz[11 - movimiento][filas] = matriz[11 - movimiento][filas + 1];
+      }
+      matriz[11 - movimiento][11 - movimiento - 1] = aux2;
+        
+      // rota por la izquierda
+      for (filas = movimiento; filas < 11 - movimiento - 1; filas++) {
+        matriz[filas][movimiento] = matriz[filas + 1][movimiento];
+      }
+      matriz[11 - movimiento - 1][movimiento] = aux;
+
     }
     
     // muestra el array resultante
