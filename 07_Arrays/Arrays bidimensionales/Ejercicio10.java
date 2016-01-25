@@ -18,7 +18,7 @@ public class Ejercicio10 {
     
     Scanner s = new Scanner(System.in);
     
-    String [][] tresEnRaya = new String[12][12]; 
+    String [][] tresEnRaya = new String[3][3]; 
     int columnas;
     int filas;
     int movimientos = 0;

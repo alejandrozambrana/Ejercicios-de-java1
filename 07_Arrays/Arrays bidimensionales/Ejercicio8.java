@@ -51,12 +51,16 @@ public class Ejercicio8 {
       }
       System.out.println();
     }
-    System.out.println(blanco + "  1 2 3 4 5 6 7 8");
+    System.out.println(blanco + "  a b c d e f g h");
     
-    System.out.print("Introduzca una cordenada, por favor: ");
+     int filaAlfil;
+     int columnaAlfil;
+    do{
+      System.out.print("Introduzca una cordenada, por favor: ");
       String cordenadaintroducida = s.nextLine();
-      int columnaAlfil = (int)(cordenadaintroducida.charAt(0)) - 96;//dice en que columna se posiciona el alfil
-      int filaAlfil = (int)(cordenadaintroducida.charAt(1)) - 48;//dice en que fila se posiciona el alfil
+      filaAlfil = (int)(cordenadaintroducida.charAt(0)) - 96;//dice en que fila se posiciona el alfil
+      columnaAlfil = Integer.parseInt(cordenadaintroducida.charAt(1) + "");//dice en que columna se posiciona el alfil
+    }while (((filaAlfil < 0) || (filaAlfil > 8)) || ((columnaAlfil < 0) || (columnaAlfil > 8)));
     
     System.out.println("El alfil puede moverse a las siguientes posiciones: ");
     System.out.println("columna | Fila");

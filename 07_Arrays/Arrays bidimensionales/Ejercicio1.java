@@ -9,7 +9,8 @@
  */
 public class Ejercicio1 {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) 
+    throws InterruptedException {
 
     System.out.println("ESTE PROGRAMA MUESTRA UNA TABLA");
    
@@ -31,6 +32,7 @@ public class Ejercicio1 {
       
       for (int columna = 0; columna < 6; columna++){
         System.out.printf("%11d", num[fila][columna]);
+        Thread.sleep(150);
       }
       System.out.println();
     }
