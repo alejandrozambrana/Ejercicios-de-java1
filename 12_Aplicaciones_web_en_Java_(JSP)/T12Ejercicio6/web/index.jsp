@@ -19,7 +19,7 @@ Realiza un conversor de pesetas a euros.
     <h1>Conversor de pesetas a euros</h1>
     <form action="Conversor.jsp" method="post" >
       <label for="cambio">Por favor, Introduce la cantidad de Pesetas a convertir:</label></br> 
-      <input type="number" min="0" step="0.001" name="conversor" id="cambio" placeholder="166.386" ></br>
+      <input type="number" min="0" step="0.001" name="conversor" id="cambio" placeholder="166.386" autofocus="" ></br>
       <input type="submit" value="Enviar">
     </form>
   </body>

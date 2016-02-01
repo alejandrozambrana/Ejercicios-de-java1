@@ -16,8 +16,8 @@
       Double euros = Double.parseDouble(request.getParameter("conversor"));
       Double pesetas = euros * 166.386;
     %> 
-      <% out.println("La cantidad de euros introducida " + euros);%> 
+      <% out.println("La cantidad de euros introducida " + (int) +  euros);%> 
       <% out.print("El resultado de la conversion es: ");%> 
-      <% out.print(pesetas);%> 
+      <% out.print((int) + pesetas);%> 
   </body>
 </html>

@@ -12,6 +12,7 @@
     <title>resultado nota</title>
   </head>
   <body>
+    
     <%double primerNumero =  Double.parseDouble(request.getParameter("nota1"));%>
     <%double segundoNumero =  Double.parseDouble(request.getParameter("nota2"));%>
     <%double terceroNumero =  Double.parseDouble(request.getParameter("nota3"));%> 
