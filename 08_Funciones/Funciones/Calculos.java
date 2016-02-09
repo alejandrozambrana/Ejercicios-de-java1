@@ -160,28 +160,51 @@ public class Calculos {
    * 
    * @param X un número entero
    * @param X un número entero con la posicion
+   * @return dice que cifra hay en la posicion elegida
+   */
+  public static int digitoN(long n, int p) {
+    n = voltea(n);
+    
+    // comprueba la posición
+    while (p-- > 0) {
+      n = n / 10;
+    }
+    
+    return (int)n % 10;
+  }
+  /**
+   * 
+   * 8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito 
+   * dentro de un número entero. Si no se encuentra, devuelve -1.
+   * 
+   * @param X un número entero
+   * @param X un número entero con la posicion
    * @return dice en que posicion esta la cifra elegida
    */
-  public static int digitoN(int n, int p) {
-    int reves = 0;
+  public static int posicionDeDigito(long n, int p) {
+    /* ////////SOLUCION CON -1//////////////////////////////////
+    int i;
+
+    for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++) {};
+
+    if (i == digitos(x)) {
+      return -1;
+    } else {
+      return i;
+    }*/
+    
     int posicion = 1;
     
-    // voltea el número    
-    do {
-      reves = (reves * 10) + (n % 10);
-      n = n / 10;
-    } while (n > 0);
-    
+    n = voltea(n);
     
     // comprueba la posición
     do {
-      if ((reves % 10) == p){
-        System.out.print(posicion + " ");
+      if ((n % 10) == p){
+        break;
       }
-      reves = reves / 10;
+      n = n / 10;
       posicion++;
-    } while (reves > 0);
-    
-    return p ;
+    } while (n > 0);
+    return posicion++;
   }
 }

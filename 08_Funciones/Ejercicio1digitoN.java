@@ -16,10 +16,10 @@ public class Ejercicio1digitoN {
     
     System.out.print("Introduzca un numero entero: ");
     int n = Integer.parseInt(s.nextLine());
-    System.out.print("Introduzca un digito del numero anterior: ");
+    System.out.print("Introduzca una posicion: ");
     int p = Integer.parseInt(s.nextLine());
     
-    System.out.print("Contando de izquierda a derecha, el " + p + " aparece en las siguientes posiciones: ");
+    System.out.print("Contando de izquierda a derecha, en la " + p + " posicion aparece: ");
     System.out.println(Funciones.Calculos.digitoN(n,p));
     
     
