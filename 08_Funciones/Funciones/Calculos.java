@@ -19,8 +19,7 @@ public class Calculos {
    * @return  <code>false</code> en caso contrario
    */
   public static boolean esCapicua(int n) {
-    
-    
+
        // número de una cifra
     if (n < 10) {
       return true;
@@ -89,7 +88,7 @@ public class Calculos {
    * @return  el menor primo que es mayor al número que se pasa como parámetro
    */
   public static int siguientePrimo(int x) {
-    while (!esPrimo(++x)) {};
+    while (!esPrimo(++x)) { };
 
     return x;
   }
@@ -115,6 +114,10 @@ public class Calculos {
         System.out.println("El exponente introducido es negatico");
       }
     return resultado;
+    
+    /**otra forma
+     * return Math.pow(base, exponente);
+     */
   }
   
   /**
