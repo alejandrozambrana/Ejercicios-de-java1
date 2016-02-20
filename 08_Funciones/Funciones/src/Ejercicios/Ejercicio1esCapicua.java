@@ -1,12 +1,13 @@
 /**
  * 
- * 1. esCapicua: Devuelve verdadero si el número que se pasa como parámetro
- * es capicúa y falso en caso contrario.
+ * 1. esCapicua: Devuelve verdadero si el nÃºmero que se pasa como parÃ¡metro
+ * es capicÃºa y falso en caso contrario.
  * 
  * @author Alejandro Zambrana Naranjo
  */
+
 import Funciones.Calculos;
- 
+
 import java.util.Scanner;
  
 public class Ejercicio1esCapicua {

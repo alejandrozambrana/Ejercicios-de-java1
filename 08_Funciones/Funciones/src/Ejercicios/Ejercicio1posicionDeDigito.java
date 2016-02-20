@@ -1,10 +1,13 @@
 /**
  * 
- * 8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito 
- * dentro de un número entero. Si no se encuentra, devuelve -1.
+ * 8. posicionDeDigito: Da la posiciÃ³n de la primera ocurrencia de un dÃ­gito 
+ * dentro de un nÃºmero entero. Si no se encuentra, devuelve -1.
  * 
  * @author Alejandro Zambrana Naranjo
- */
+*/
+
+package Ejercicios;
+
 import Funciones.Calculos;
  
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 /**
  * 
- * 7. digitoN: Devuelve el dígito que está en la posición n de un número entero.
+ * 7. digitoN: Devuelve el dÃ­gito que estÃ¡ en la posiciÃ³n n de un nÃºmero entero.
  *  Se empieza contando por el 0 y de izquierda a derecha.
  * 
  * @author Alejandro Zambrana Naranjo

@@ -1,6 +1,6 @@
 /**
  * 
- * 2. esPrimo: Devuelve verdadero si el número que se pasa como parámetro 
+ * 2. esPrimo: Devuelve verdadero si el nÃºmero que se pasa como parÃ¡metro 
  * es primo y falso en caso contrario.
  * 
  * @author Alejandro Zambrana Naranjo

@@ -1,7 +1,7 @@
 /**
  * 
- * 3. siguientePrimo: Devuelve el menor primo que es mayor al número que se 
- * pasa como parámetro.
+ * 3. siguientePrimo: Devuelve el menor primo que es mayor al nÃºmero que se 
+ * pasa como parÃ¡metro.
  * 
  * @author Alejandro Zambrana Naranjo
  */
