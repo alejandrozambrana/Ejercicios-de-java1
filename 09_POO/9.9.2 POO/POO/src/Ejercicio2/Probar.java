@@ -12,8 +12,16 @@ public class Probar {
         int km;
         int opcion;
     
-        Bicicleta Motoretta = new Bicicleta("Rojo");
-        coche fiestaST = new coche(1900);
+        System.out.println("¿De que color es la bicicleta?");
+        String color = s.nextLine();
+        System.out.println("¿Cuantos piñones tiene la bicicleta?");
+        int piñones = s.nextInt();
+        System.out.println("¿Cilindrada del motor del coche?");
+        int cilindrada = s.nextInt();
+        
+        Bicicleta Motoretta = new Bicicleta(color, piñones);
+        coche fiestaST = new coche(cilindrada);
+        
       do{   
         System.out.println("1. Anda con la bicicleta");
         System.out.println("2. Haz el caballito con la bicicleta");

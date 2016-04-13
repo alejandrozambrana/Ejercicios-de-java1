@@ -25,7 +25,7 @@ public class Gato extends Mamifero {
   }
   
   public void maulla(){
-    System.out.println("Miauuuuuu");
+    
   }
   
   public void araña(){

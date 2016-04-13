@@ -18,16 +18,16 @@ public abstract class vehiculo {
  }
  
  public int getKilometrosRecorridos() {
-    return kilometrosRecorridos;
+    return this.kilometrosRecorridos;
   }
   
   public int getKilometrosTotales() {
-    return kilometrosTotales;
+    return vehiculo.kilometrosTotales;
   }
   
   public void recorre(int k) {
     this.kilometrosRecorridos += k;
-    kilometrosTotales += k;
+    vehiculo.kilometrosTotales += k;
   }
  
 }

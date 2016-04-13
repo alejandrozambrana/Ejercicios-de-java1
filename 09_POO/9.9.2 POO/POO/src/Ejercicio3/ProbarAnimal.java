@@ -27,7 +27,8 @@ public class ProbarAnimal {
     garfiel.come();
     garfiel.maulla();
     garfiel.lame();
-    System.out.println();
+    System.out.println(garfiel);
+    
     
     System.out.println("LAGARTO");
     Lagarto lagarto = new Lagarto(Sexo.MACHO);
@@ -60,7 +61,7 @@ public class ProbarAnimal {
     Torpon.anda();
     Torpon.huevo();
     Torpon.bano();
-    System.out.println();
+    System.out.println(Torpon);
     
   }
   

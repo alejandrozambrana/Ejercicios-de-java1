@@ -10,6 +10,11 @@ public class Ave extends Animal {
     super(s);
   }
 
+  public String toString(){
+    return "Sexo:" + this.getSexo() + "\n"
+      + "Soy de la clase:" + this.getClass().getName() + "\n";
+  }
+  
   public void volar(){
     System.out.println("Estoy volando");
   }

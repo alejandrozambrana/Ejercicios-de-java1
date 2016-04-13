@@ -19,6 +19,7 @@ public class Pizza {
     Pizza.totalPizzasPedidas++;
   }
   
+  @Override
   public String toString(){
     return "Pizza " + this.tipo + ", " + this.tamaño + ", " + this.estado;
   }

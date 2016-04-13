@@ -4,13 +4,16 @@ public class Bicicleta extends vehiculo {
  
   private String color; 
   
-  public Bicicleta(String p) {
-    super();
-    this.color = p;
+  private int platos = 1;
+  
+  public Bicicleta(String c, int p) {
+    super();//lama al contructor de la superclase
+    this.color = c;
+    this.platos = p;
   }
 
   public void hazCaballito() {
     System.out.println("Estoy haciendo el caballito");
-    System.out.print("--------------------------------");
+    System.out.println ("--------------------------------");
   }
 }

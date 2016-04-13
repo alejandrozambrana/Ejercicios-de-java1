@@ -2,6 +2,7 @@ package Ejercicio3;
 
 public abstract class Animal {
 
+  //para utilizar enumerado
   private Sexo sexo;
   
   public Animal () {
@@ -16,6 +17,10 @@ public abstract class Animal {
     return this.sexo;
   }
 
+  public String toString(){
+    return "Sexo:" + this.sexo + "\n"
+      + "Soy de la clase:" + this.getClass().getName() + "\n";
+  }
   public void duerme() {
     System.out.println("Zzzzzzz");
   }

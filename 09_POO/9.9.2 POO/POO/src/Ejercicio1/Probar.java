@@ -5,8 +5,8 @@ public class Probar {
 
     public static void main(String[] args) {
         
-        caballo caballo = new caballo("caballo");
-        
+        caballo caballo = new caballo("alejandro");
+       
         caballo.relincha();
         caballo.trota();
         caballo.relincha();

@@ -25,7 +25,7 @@ public class PruebaTiempo {
     
     Tiempo T1 = new Tiempo(hora, minutos, segundos);
     Tiempo T2 = new Tiempo(hora2, minutos2, segundos2);
-    
+
     System.out.println(T1 + " + " + T2 + " = " + T1.sumar(T2));
     System.out.println(T1 + " - " + T2 + " = " + T1.resta(T2));
   }

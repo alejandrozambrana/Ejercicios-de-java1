@@ -11,7 +11,7 @@ public class coche extends vehiculo {
 
   public void QuemaRueda() {
     System.out.println("EL coche quema rueda");
-    System.out.print("--------------------------------");
+    System.out.println("--------------------------------");
   }
 }
  
