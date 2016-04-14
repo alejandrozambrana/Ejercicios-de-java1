@@ -45,7 +45,7 @@ public class Articulo {
     return this.stock;
   }
   
-  public void setPrecioStock(int stock){
+  public void setStock(int stock){
     this.stock = stock;
   }
   
@@ -53,6 +53,10 @@ public class Articulo {
   public String toString(){
     return "Codigo: " + this.codigo + "\nDescripcion: " + this.descripcion + 
             "\nPrecio de la compra: " + this.precioCompra +
-            "\nPrecio de la Venta: " + this.precioVenta + "\nStock: " + this.stock + "\n \n"; 
+            "\nPrecio de la Venta: " + this.precioVenta + "\nStock: " + this.stock + "\n"; 
+  }
+
+  Object setCodigo() {
+    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
   }
 }

@@ -84,7 +84,7 @@ public class ProbarColeccion {
         case 3:
           System.out.println("\nModificar Disco");
           System.out.println("---------------");
-          System.out.println("Introduze el codigo del disco que quiere modificar: ");
+          System.out.println("Introduce el codigo del disco que quiere modificar: ");
           codigoModificar = s.next();
           
           int i = -1;
@@ -98,34 +98,34 @@ public class ProbarColeccion {
           System.out.print("\nTitulo ");
           System.out.print("\nGenero ");
           System.out.print("\nDuracion ");
-          System.out.print("\nIntroduze una opcion: ");
+          System.out.print("\nIntroduce una opcion: ");
           opcionModificar = s.next();
           if(opcionModificar.equals("codigo")){
-            System.out.print("Introduze el nuevo Codigo: ");
+            System.out.print("Introduce el nuevo Codigo: ");
             codigoIntroducido = s.next();
             cd[i].setCodigo(codigoIntroducido);
           }
           
           if(opcionModificar.equals("autor")){
-            System.out.print("Introduze el nuevo Autor: ");
+            System.out.print("Introduce el nuevo Autor: ");
             autorIntroducido = s.next();
             cd[i].setAutor(autorIntroducido);
           }
           
           if(opcionModificar.equals("titulo")){
-            System.out.print("Introduze el nuevo Titulo: ");
+            System.out.print("Introduce el nuevo Titulo: ");
             tituloIntroducido = s.next();
             cd[i].setTitulo(tituloIntroducido);
           }
           
           if(opcionModificar.equals("genero")){
-            System.out.print("Introduze el nuevo Genero: ");
+            System.out.print("Introduce el nuevo Genero: ");
             generoIntroducido = s.next();
             cd[i].setGenero(generoIntroducido);
           }
           
           if(opcionModificar.equals("duracion")){
-            System.out.print("Introduze la nueva Duracion: ");
+            System.out.print("Introduce la nueva Duracion: ");
             duracionIntroducida = s.nextInt();
             cd[i].setDuracion(duracionIntroducida);
           }
